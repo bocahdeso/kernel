@@ -13,11 +13,12 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "unifreq"
+        default: "bocahdeso"
         type: choice
         options:
           - unifreq
           - codesnas
+          - bocahdeso
       kernel_version:
         description: "Select kernel version"
         required: false
@@ -30,9 +31,6 @@ on:
           - 6.1.y
           - 6.6.y
           - 6.12.y
-          - 5.4.y_5.10.y
-          - 5.15.y_6.1.y
-          - 6.6.y_6.12.y
       kernel_auto:
         description: "Auto use the latest kernel"
         required: false
@@ -72,20 +70,12 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-ophub"
+        default: "-Xidz_x"
         type: choice
         options:
           - -ophub
-          - -happy-new-year
-          - -dragon-boat-festival
-          - -mid-autumn-festival
-          - -happy-national-day
-          - -merry-christmas
-          - -spring-plowing
-          - -summer-growing
-          - -autumn-harvesting
-          - -winter-storing
-          - -yourname
+          - -Xidz_x+
+          - -Missquenx+
       kernel_config:
         description: "Set the path of kernel .config"
         required: false
